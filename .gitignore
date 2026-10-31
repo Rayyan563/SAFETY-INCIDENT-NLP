@@ -4,17 +4,17 @@ __pycache__/
 venv/
 .env
 
-# Keep datasets private
-DATA/raw/
-DATA/processed/
-
-# Ignore trained model files
-MODELS/*.joblib
-MODELS/*.pkl
-MODELS/*.pickle
-
-# Temporary files
 .DS_Store
 Thumbs.db
-DATA/
-MODELS/
+*.pyc
+*.log
+*.tmp
+
+DATA/raw/
+DATA/processed/*
+!DATA/processed/safety_incidents_cleaned.csv
+
+MODELS/logistic_regression_backup.joblib
+MODELS/root_cause_model.joblib
+MODELS/safety_risk_model.cbm
+MODELS/safety_risk_metadata.joblib
